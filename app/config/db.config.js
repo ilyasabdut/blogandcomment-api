@@ -10,8 +10,11 @@ module.exports = {
   DB: "d6svsrev9d0vui",
   dialect: "postgres",
   dialectOptions: {
-    ssl: true
-},
+    ssl: {
+      require: true,
+      rejectUnauthorized: false,
+    },
+  },
   pool: {
     max: 5,
     min: 0,
