@@ -31,7 +31,7 @@ app.get("/", (req, res) => {
 
 require("./app/routes/blogs.routes.js")(app);
 
-const PORT = process.env.PORT || 8080;
+const PORT = 5432 || 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
