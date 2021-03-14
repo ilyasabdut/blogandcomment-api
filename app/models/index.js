@@ -7,7 +7,6 @@ const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
   operatorsAliases: false,
   port: dbConfig.port,
   dialectOptions: {
-    ssl: true,
     rejectUnauthorized: false
   },
   pool: {
